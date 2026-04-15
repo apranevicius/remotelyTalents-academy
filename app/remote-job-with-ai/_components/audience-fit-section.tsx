@@ -6,12 +6,12 @@ export function AudienceFitSection() {
       <div className="mx-auto max-w-7xl px-6 pb-16 pt-14 sm:px-10 sm:pt-16 lg:px-12">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="text-3xl font-extrabold tracking-[-0.04em] text-[var(--rt-green)] sm:text-[2.15rem] lg:text-[2.4rem]">
-            A better way to start your remote job search.
+            A better way to apply, search, and get interviews
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-[color:color-mix(in_srgb,var(--rt-green)_78%,white)] sm:text-[1.0625rem] sm:leading-8">
-            This is not another generic job-search course. It is a practical
-            system built to help you avoid fake jobs, weak advice, and
-            scattered application effort by following a clearer process.
+            This is not another generic job-search course. It is a
+            recruiter-led plan to help you avoid fake jobs, strengthen your
+            applications, and move through the process with more confidence.
           </p>
           <div className="mx-auto mt-10 max-w-2xl rounded-[2rem] border border-[var(--rt-line)] bg-white p-8 text-left shadow-[0_16px_44px_rgba(4,61,49,0.06)]">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[var(--rt-green-2)]">

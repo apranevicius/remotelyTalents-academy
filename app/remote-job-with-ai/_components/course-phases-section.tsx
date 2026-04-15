@@ -9,7 +9,7 @@ export function CoursePhasesSection() {
       <div className="mx-auto max-w-7xl px-6 py-20 sm:px-10 lg:px-12">
         <SectionHeading
           eyebrow=""
-          title="Here’s what you’ll learn to do differently"
+          title="What helps you apply better, search smarter, and get more interviews"
           description="This course walks you through six focused phases to help you stop guessing, avoid wasted effort, and build a clearer path to a real remote job."
           align="center"
         />

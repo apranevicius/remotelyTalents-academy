@@ -19,8 +19,9 @@ export function HeroSection() {
               Find a Remote Job with the Help of AI in 29 Days
             </h1>
             <p className="mt-6 max-w-xl text-base leading-7 text-white/80 sm:text-lg sm:leading-8">
-              Use a step-by-step course to position yourself better, apply with
-              more confidence, and find more real remote opportunities.
+              Stop wasting time on fake jobs, broken advice, and low-response
+              applications. Follow a recruiter-led plan to apply better, search
+              smarter, and get more interviews.
             </p>
             <div className="mt-9">
               <Link

@@ -45,42 +45,42 @@ export type FaqItem = {
 export const steps: Step[] = [
   {
     phase: "Phase 1",
-    title: "Is Remote Work Right for You?",
+    title: "Know if remote work is the right move for you",
     body: "Understand whether remote work is actually the right fit for you and what remote employers expect from strong candidates. This phase helps you stop guessing and start building the habits that matter. You will also identify the strengths you already have and learn how to turn them into proof later in the process.",
     imageSrc: "/phases/1.png",
     imageAlt: "Phase 1 mindset and fit overview",
   },
   {
     phase: "Phase 2",
-    title: "Fix How You Show Up",
+    title: "Make your CV, LinkedIn, and applications stronger",
     body: "This phase helps you stop looking generic. You will improve your CV, cover letters, LinkedIn profile, and other application assets so they feel more relevant, more credible, and more aligned with remote roles. The goal is to help recruiters understand your value faster and take you more seriously.",
     imageSrc: "/phases/2.avif",
     imageAlt: "Phase 2 positioning overview",
   },
   {
     phase: "Phase 3",
-    title: "Find Better Remote Opportunities",
+    title: "Find better remote jobs worth applying for",
     body: "Learn where to find better remote roles and how to avoid wasting time on weak, fake, or misleading opportunities. This phase helps you build a smarter search system so you are not relying only on crowded job boards. You will also get a clearer sense of which channels are actually worth your effort.",
     imageSrc: "/phases/3.avif",
     imageAlt: "Phase 3 opportunities overview",
   },
   {
     phase: "Phase 4",
-    title: "Use AI Without Sounding Fake",
+    title: "Use AI to save time without sounding fake",
     body: "Use AI in a practical way that helps you move faster without sounding fake or robotic. This phase shows you how to use AI to research roles, improve applications, prepare for interviews, and reduce repetitive work. The goal is not to replace your real experience, but to help you use it better.",
     imageSrc: "/phases/4.avif",
     imageAlt: "Phase 4 AI advantage overview",
   },
   {
     phase: "Phase 5",
-    title: "Handle Interviews and Offers Better",
+    title: "Show up better in interviews and offer conversations",
     body: "This phase helps you handle interviews, screening calls, and offer conversations with more confidence. You will learn how to structure stronger answers, present yourself more clearly, and approach negotiation in a calmer, smarter way. It is about helping you feel more prepared at the moments that matter most.",
     imageSrc: "/phases/5.avif",
     imageAlt: "Phase 5 offer strategy overview",
   },
   {
     phase: "Phase 6",
-    title: "Create More Opportunities",
+    title: "Create more opportunities through smarter outreach",
     body: "Create more opportunities outside the standard application flow. This phase focuses on outreach, hidden-job tactics, and finding smarter ways to reach recruiters or hiring managers directly. It is designed to help you stop waiting passively and start creating more real chances for yourself.",
     imageSrc: "/phases/6.avif",
     imageAlt: "Phase 6 advanced outreach overview",
@@ -192,28 +192,33 @@ export const audienceFit: AudienceFitItem[] = [
 
 export const faqs: FaqItem[] = [
   {
-    question: "Is this course for beginners?",
+    question: "Is this just another generic online course?",
     answer:
-      "Yes. This course is designed for people who want their first real remote job and need a clearer, more practical system.",
+      "No. This course is built around real remote hiring experience, not recycled internet advice. It gives you a practical 29-day plan, recruiter-led guidance, templates, prompts, checklists, and concrete help with applications, LinkedIn, outreach, and interviews.",
   },
   {
-    question: "Do I need remote work experience already?",
+    question: "Will this work if I have no remote experience yet?",
     answer:
-      "No. The course is built to help people who are trying to land their first remote role, especially if they need help understanding what remote employers expect.",
+      "Yes. The course is designed for people trying to land their first real remote role, especially if they need help understanding what remote employers expect and how to present their existing experience more clearly.",
   },
   {
-    question: "Do I need to be highly technical?",
+    question: "What exactly do I get inside the course?",
     answer:
-      "No. The course is not only for technical roles. It is built for people in a range of professional fields who want to improve how they position themselves for remote work.",
+      "You get the full recruiter-led course, a 29-day action plan, and a practical toolkit covering applications, LinkedIn, outreach, remote job search, interviews, prompts, and checklists. The goal is to give you practical help you can use right away, not vague motivation.",
   },
   {
-    question: "Is this just a course about AI?",
+    question: "Why not just use ChatGPT on my own?",
     answer:
-      "No. The main goal is to help you get a remote job. AI is used as a support tool to help you move faster and work more effectively.",
+      "ChatGPT is a tool, not a recruiter-led plan. This course adds hiring judgment, sequencing, scam filtering, practical templates, and real-world direction so you know what to do, what to avoid, and how to use AI without sounding generic or fake.",
   },
   {
-    question: "Will this guarantee I get hired in 29 days?",
+    question: "Will this help me get more interviews?",
     answer:
-      "No. The 29 days framing refers to the structure of the action plan. Results still depend on your background, effort, positioning, and the roles you apply for.",
+      "That is the main practical outcome the course is designed to improve. It helps you strengthen your applications, search smarter, avoid wasting time on weak opportunities, and show up more clearly to recruiters. It does not guarantee results, but it is built to improve your chances in real ways.",
+  },
+  {
+    question: "Does 29 days mean I will get hired in 29 days?",
+    answer:
+      "No. The 29-day framing refers to the structure of the action plan, not a guaranteed hiring deadline. It means you get a focused, guided way to stop guessing and move through the process with clearer next steps.",
   },
 ];
