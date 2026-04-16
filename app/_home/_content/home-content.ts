@@ -1,7 +1,7 @@
 export const homeContent = {
   header: {
     ctaLabel: "View Course",
-    ctaHref: "/remote-job-with-ai",
+    ctaHref: "/find-remote-job-with-ai",
   },
   hero: {
     eyebrow: "RemotelyTalents Academy",
@@ -84,6 +84,6 @@ export const homeContent = {
       "https://cdn.prod.website-files.com/62a0b732bafc8e2f190f701c/69df4ac03c275c787d6aaf8a_pricing.avif",
     imageAlt: "Remote Job With AI course and toolkit bundle",
     ctaLabel: "Learn More About The Course",
-    ctaHref: "/remote-job-with-ai",
+    ctaHref: "/find-remote-job-with-ai",
   },
 } as const;
