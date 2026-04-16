@@ -1,4 +1,4 @@
-import { SectionHeading } from "./section-heading";
+import { SectionHeading } from "../../_components/section-heading";
 
 const instructorHighlights = [
   "Senior Recruiter at RemotelyTalents",

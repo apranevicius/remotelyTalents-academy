@@ -10,6 +10,12 @@
   --rt-surface-soft: #eef2ef;
   --rt-line: #e6ecea;
   --rt-ink: #0f1f1a;
+  --rt-hero-surface: radial-gradient(
+      circle at top left,
+      rgba(240, 253, 81, 0.2),
+      transparent 28%
+    ),
+    linear-gradient(180deg, #043d31 0%, #032f26 100%);
 }
 
 @theme inline {

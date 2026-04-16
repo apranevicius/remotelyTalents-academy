@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 import { faqs } from "../_content/remote-job-with-ai-content";
-import { SectionHeading } from "./section-heading";
+import { SectionHeading } from "../../_components/section-heading";
 
 export function FaqSection() {
   const [openIndex, setOpenIndex] = useState(0);

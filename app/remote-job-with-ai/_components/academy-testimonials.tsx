@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 
-import { SectionHeading } from "./section-heading";
+import { SectionHeading } from "../../_components/section-heading";
 
 type AcademyTestimonial = {
   name: string;

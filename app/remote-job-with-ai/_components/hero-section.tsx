@@ -9,7 +9,10 @@ import {
 export function HeroSection() {
   return (
     <>
-      <section className="bg-[radial-gradient(circle_at_top_left,rgba(240,253,81,0.2),transparent_28%),linear-gradient(180deg,#043d31_0%,#032f26_100%)] text-white">
+      <section
+        id="hero"
+        className="bg-[var(--rt-green)] [background-image:var(--rt-hero-surface)] text-white"
+      >
         <div className="mx-auto grid min-h-[calc(100svh-73px)] max-w-7xl items-center gap-14 px-6 py-20 sm:px-10 lg:grid-cols-[1.05fr_0.95fr] lg:px-12 lg:py-24">
           <div className="max-w-2xl">
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[var(--rt-yellow)]">
@@ -43,14 +46,15 @@ export function HeroSection() {
             </div>
           </div>
 
-          <div className="relative">
-            <div className="relative min-h-[320px] sm:min-h-[360px]">
+          <div className="relative flex items-center justify-center">
+            <div className="w-full max-w-[21rem] sm:max-w-[25rem] lg:max-w-[38rem]">
               <Image
                 src="https://cdn.prod.website-files.com/62a0b732bafc8e2f190f701c/69c260f396f613675d5aecba_a70d2a2ab3c6c8c83da9f903fbf73039_hero-picture.avif"
                 alt="Professional working remotely"
-                fill
-                sizes="(max-width: 1024px) 100vw, 48vw"
-                className="scale-[1.4] object-contain"
+                width={1024}
+                height={1024}
+                sizes="(max-width: 640px) 84vw, (max-width: 1024px) 44vw, 38rem"
+                className="h-auto w-full object-contain"
                 priority
               />
             </div>

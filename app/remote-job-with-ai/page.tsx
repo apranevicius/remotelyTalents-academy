@@ -9,6 +9,7 @@ import { HeroSection } from "./_components/hero-section";
 import { InstructorSection } from "./_components/instructor-section";
 import { LegalFooter } from "./_components/legal-footer";
 import { MidPageCtaSection } from "./_components/mid-page-cta-section";
+import { MobileStickyCta } from "./_components/mobile-sticky-cta";
 import { PageHeader } from "./_components/page-header";
 import { PricingSection } from "./_components/pricing-section";
 import { ToolkitSection } from "./_components/toolkit-section";
@@ -21,7 +22,10 @@ export const metadata: Metadata = {
 
 export default function RemoteJobWithAIPage() {
   return (
-    <main id="top" className="bg-[var(--rt-cream)] text-[var(--rt-green)]">
+    <main
+      id="top"
+      className="bg-[var(--rt-cream)] pb-24 text-[var(--rt-green)] md:pb-0"
+    >
       <PageHeader />
       <HeroSection />
       <AudienceFitSection />
@@ -34,6 +38,7 @@ export default function RemoteJobWithAIPage() {
       <FaqSection />
       <FinalCtaSection />
       <LegalFooter />
+      <MobileStickyCta />
     </main>
   );
 }

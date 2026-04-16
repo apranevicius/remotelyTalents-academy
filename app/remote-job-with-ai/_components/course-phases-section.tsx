@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import { steps } from "../_content/remote-job-with-ai-content";
-import { SectionHeading } from "./section-heading";
+import { SectionHeading } from "../../_components/section-heading";
 
 export function CoursePhasesSection() {
   return (
