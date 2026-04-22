@@ -13,6 +13,7 @@ type AcademyTestimonial = {
   quote: string;
   avatar: string;
   image?: string | null;
+  imagePosition?: string;
   verified?: boolean;
 };
 
@@ -24,8 +25,8 @@ const testimonials: AcademyTestimonial[] = [
     result: "Stopped guessing what to fix first",
     quote:
       "I had been jumping between random advice, templates, and AI tools without knowing what actually mattered. This helped me focus on the right fixes first instead of wasting time on everything at once.",
-    avatar: "/testimonials/academy-placeholders/woman-brown-hair.jpg",
-    image: "/testimonials/academy-placeholders/maya-patel-cms-laptop-cafe.png",
+    avatar: "/testimonials/generated/maya-patel-avatar.avif",
+    image: "/testimonials/generated/maya-patel-testimonial-photo.avif",
   },
   {
     name: "James Mitchell",
@@ -83,9 +84,9 @@ const testimonials: AcademyTestimonial[] = [
     result: "Gave me a 29-day plan I could actually follow",
     quote:
       "I needed something that broke the job search into steps I could realistically follow without feeling lost after two days. The 29-day plan gave me that and made it easier to keep momentum.",
-    avatar: "/testimonials/academy-placeholders/woman-blonde.jpg",
-    image:
-      "/testimonials/academy-placeholders/sophie-laurent-cms-laptop-home-office.png",
+    avatar: "/testimonials/generated/sophie-laurent-avatar.avif",
+    image: "/testimonials/generated/sophie-laurent-testimonial-photo.avif",
+    imagePosition: "center 18%",
   },
   {
     name: "Emma Richardson",
@@ -172,6 +173,7 @@ function TestimonialCard({
               fill
               sizes="(min-width: 1024px) 26vw, (min-width: 640px) 40vw, 100vw"
               className="object-cover"
+              style={{ objectPosition: testimonial.imagePosition ?? "center" }}
             />
           </div>
         </div>

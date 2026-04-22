@@ -81,7 +81,7 @@ export const homeContent = {
       "Use AI to save time, prepare better, and move toward more interviews.",
     ],
     imageSrc:
-      "https://cdn.prod.website-files.com/62a0b732bafc8e2f190f701c/69df4ac03c275c787d6aaf8a_pricing.avif",
+      "/course-assets/remote-job-with-ai-pricing-bundle.png",
     imageAlt: "Remote Job With AI course and toolkit bundle",
     ctaLabel: "Learn More About The Course",
     ctaHref: "/find-remote-job-with-ai",

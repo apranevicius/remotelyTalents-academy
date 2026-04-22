@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { SectionHeading } from "../../_components/section-heading";
 
 const instructorHighlights = [
@@ -19,15 +21,16 @@ export function InstructorSection() {
         <div className="mt-12 grid gap-8 rounded-[2.2rem] border border-[var(--rt-line)] bg-white p-6 shadow-[0_18px_44px_rgba(4,61,49,0.05)] sm:p-8 lg:grid-cols-[0.42fr_0.58fr] lg:gap-10 lg:p-10">
           <div>
             <div className="overflow-hidden rounded-[1.9rem] border border-[var(--rt-line)] bg-[linear-gradient(180deg,#eef3e8_0%,#dfe8db_100%)] shadow-[inset_0_1px_0_rgba(255,255,255,0.8)]">
-              <div className="flex aspect-[4/5] items-center justify-center px-6">
-                <div className="flex h-28 w-28 items-center justify-center rounded-full border border-[color:rgba(4,61,49,0.1)] bg-white/80 text-4xl font-extrabold tracking-[-0.05em] text-[var(--rt-green)] shadow-[0_18px_30px_rgba(4,61,49,0.08)]">
-                  DL
-                </div>
+              <div className="relative aspect-[4/5]">
+                <Image
+                  src="https://cdn.prod.website-files.com/62a0b732bafc8e2f190f701c/69e884046e9c9212289704a3_daria-litvinova.avif"
+                  alt="Daria Litvinova, Senior Recruiter at RemotelyTalents"
+                  fill
+                  sizes="(min-width: 1024px) 32vw, (min-width: 640px) 50vw, 100vw"
+                  className="object-cover object-center"
+                />
               </div>
             </div>
-            <p className="mt-4 text-center text-sm leading-6 text-[color:color-mix(in_srgb,var(--rt-green)_62%,white)]">
-              Instructor photo placeholder
-            </p>
           </div>
 
           <div className="flex flex-col justify-center">

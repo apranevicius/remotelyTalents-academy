@@ -33,7 +33,7 @@ export function PricingSection() {
             <div className="relative overflow-hidden rounded-[1.85rem] border border-[color:rgba(4,61,49,0.08)] bg-[radial-gradient(circle_at_top,rgba(240,253,81,0.18),transparent_42%),linear-gradient(180deg,#fbfaf4_0%,#eef3e8_100%)] px-4 py-5 shadow-[inset_0_1px_0_rgba(255,255,255,0.8),0_18px_34px_rgba(4,61,49,0.14)] sm:px-5 sm:py-6">
               <div className="absolute inset-x-6 top-0 h-10 rounded-full bg-white/30 blur-2xl" />
               <Image
-                src="https://cdn.prod.website-files.com/62a0b732bafc8e2f190f701c/69df4ac03c275c787d6aaf8a_pricing.avif"
+                src="/course-assets/remote-job-with-ai-pricing-bundle.png"
                 alt="Remote Job With AI course and toolkit bundle"
                 width={1600}
                 height={768}
