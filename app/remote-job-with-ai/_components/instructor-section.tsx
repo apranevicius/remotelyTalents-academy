@@ -36,11 +36,28 @@ export function InstructorSection() {
           <div className="flex flex-col justify-center">
             <div className="text-center lg:text-left">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[var(--rt-green-2)]">
-                Daria Litvinova
-              </p>
-              <h3 className="mt-4 text-3xl font-extrabold tracking-[-0.045em] text-[var(--rt-green)] sm:text-[2.2rem]">
                 Senior Recruiter at RemotelyTalents
-              </h3>
+              </p>
+              <div className="mt-4 flex items-center justify-center gap-3 lg:justify-start">
+                <h3 className="text-3xl font-extrabold tracking-[-0.045em] text-[var(--rt-green)] sm:text-[2.2rem]">
+                  Daria Litvinova
+                </h3>
+                <a
+                  href="https://www.linkedin.com/in/daria-l-81608865/"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="View Daria Litvinova on LinkedIn"
+                  className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[var(--rt-line)] bg-white text-[#0A66C2] shadow-[0_10px_24px_rgba(4,61,49,0.05)] transition-colors hover:bg-[var(--rt-cream)]"
+                >
+                  <svg
+                    aria-hidden="true"
+                    viewBox="0 0 24 24"
+                    className="h-4.5 w-4.5 fill-current"
+                  >
+                    <path d="M6.94 8.5A1.56 1.56 0 1 1 6.9 5.38a1.56 1.56 0 0 1 .04 3.12ZM5.6 9.7h2.67V18H5.6V9.7Zm4.34 0H12.5v1.13h.04c.36-.68 1.24-1.4 2.56-1.4 2.74 0 3.25 1.8 3.25 4.14V18h-2.67v-3.95c0-.94-.02-2.16-1.32-2.16-1.32 0-1.52 1.03-1.52 2.1V18H9.94V9.7Z" />
+                  </svg>
+                </a>
+              </div>
 
               <p className="mt-5 text-base leading-7 text-[color:color-mix(in_srgb,var(--rt-green)_80%,white)] sm:text-[1.05rem] sm:leading-8">
                 Daria Litvinova is a Senior Recruiter at RemotelyTalents with
