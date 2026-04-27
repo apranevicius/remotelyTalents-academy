@@ -1,36 +1,115 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# RemotelyTalents Academy Site
 
-## Getting Started
+This is the Next.js website for RemotelyTalents Academy.
 
-First, run the development server:
+It contains:
+
+- the Academy homepage at `/`
+- the Academy About page at `/about`
+- the public course page at `/find-remote-job-with-ai`
+- a legacy redirect from `/remote-job-with-ai`
+
+The parent Academy workspace holds the strategy, marketing, course, and design context in `../context/`.
+
+## Stack
+
+- Next.js App Router
+- React
+- TypeScript
+- Tailwind CSS 4
+- Poppins via `next/font`
+
+## Start Here
+
+Before editing this app, read:
+
+1. [../AGENTS.md](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/AGENTS.md)
+2. [AGENTS.md](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/site/AGENTS.md)
+3. [../context/index.md](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/context/index.md)
+4. [../context/MEMORY.md](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/context/MEMORY.md)
+5. [DESIGN.md](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/site/DESIGN.md) for UI work
+
+## Development
+
+Run commands from this folder:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The dev server usually opens at:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+If that port is busy, Next.js may choose another port.
 
-## Learn More
+## Verification
 
-To learn more about Next.js, take a look at the following resources:
+Use these checks before calling code work done:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run lint
+npm exec tsc -- --noEmit
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Run a production build when changes affect routing, metadata, images, imports, or production behavior:
 
-## Deploy on Vercel
+```bash
+npm run build
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+For UI changes, also check the page in a browser on desktop and mobile widths.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Environment
+
+Optional environment variable:
+
+```bash
+NEXT_PUBLIC_SITE_URL=https://www.remotelytalents.com
+```
+
+This value is used for canonical links, sitemap, robots, and structured data through [app/_lib/site-config.ts](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/site/app/_lib/site-config.ts).
+
+If it is not set, the app falls back to:
+
+```text
+https://www.remotelytalents.com
+```
+
+Google Tag Manager is embedded in [app/layout.tsx](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/site/app/layout.tsx).
+
+## App Structure
+
+| Path | Purpose |
+| --- | --- |
+| [app/page.tsx](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/site/app/page.tsx) | Academy homepage route |
+| [app/_home/](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/site/app/_home) | Homepage components and content |
+| [app/about/](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/site/app/about) | About page route, components, content, metadata, and schema |
+| [app/find-remote-job-with-ai/page.tsx](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/site/app/find-remote-job-with-ai/page.tsx) | Canonical course page route |
+| [app/remote-job-with-ai/page.tsx](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/site/app/remote-job-with-ai/page.tsx) | Legacy redirect route |
+| [app/remote-job-with-ai/remote-job-with-ai-page.tsx](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/site/app/remote-job-with-ai/remote-job-with-ai-page.tsx) | Shared course page assembly |
+| [app/remote-job-with-ai/_content/](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/site/app/remote-job-with-ai/_content) | Course page content data |
+| [app/_components/](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/site/app/_components) | Shared site components |
+| [app/globals.css](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/site/app/globals.css) | Global styles and brand variables |
+| [public/](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/site/public) | Static images and payment logos |
+
+## Design Contract
+
+Use [DESIGN.md](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/site/DESIGN.md) as the compact AI-facing design contract for website UI work.
+
+The deeper design rationale lives in:
+
+- [../context/BRAND-AND-DESIGN/visual-direction.md](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/context/BRAND-AND-DESIGN/visual-direction.md)
+- [../context/BRAND-AND-DESIGN/color-palette.md](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/context/BRAND-AND-DESIGN/color-palette.md)
+- [../context/BRAND-AND-DESIGN/typography-and-fonts.md](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/context/BRAND-AND-DESIGN/typography-and-fonts.md)
+- [../context/BRAND-AND-DESIGN/website-ui-system.md](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/context/BRAND-AND-DESIGN/website-ui-system.md)
+
+## Content Safety
+
+Do not invent testimonials, reviews, placements, guarantees, pricing, or outcome claims.
+
+The course can use the `29 days` framing as a structured action plan, but not as a hiring guarantee.
+
+When in doubt, check [../context/MEMORY.md](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/context/MEMORY.md) before editing public claims.
