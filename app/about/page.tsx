@@ -4,18 +4,18 @@ import { absoluteUrl } from "../_lib/site-config";
 import { AboutPage } from "./about-page";
 
 export const metadata: Metadata = {
-  title: "About RemotelyTalents Academy",
+  title: "About RemotelyTalents Academy | Remote Job Education",
   description:
-    "Learn why RemotelyTalents Academy was built, how it connects to the RemotelyTalents recruitment agency, and where its recruiter-led education and coaching direction is going.",
+    "Learn how RemotelyTalents Academy turns remote recruitment experience into recruiter-led courses, practical tools, and future coaching for remote job seekers.",
   alternates: {
     canonical: absoluteUrl("/about"),
   },
   openGraph: {
     type: "website",
     url: absoluteUrl("/about"),
-    title: "About RemotelyTalents Academy",
+    title: "About RemotelyTalents Academy | Remote Job Education",
     description:
-      "RemotelyTalents Academy turns remote recruitment experience into practical education, tools, and future coaching programs for professionals pursuing remote work.",
+      "Learn how RemotelyTalents Academy turns remote recruitment experience into recruiter-led courses, practical tools, and future coaching for remote job seekers.",
     images: [
       {
         url: "https://cdn.prod.website-files.com/62a0b732bafc8e2f190f701c/69c3ae5456f9e60e8a2a0ee3_6-candidates.avif",
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "About RemotelyTalents Academy",
+    title: "About RemotelyTalents Academy | Remote Job Education",
     description:
-      "RemotelyTalents Academy turns remote recruitment experience into practical education, tools, and future coaching programs for professionals pursuing remote work.",
+      "Learn how RemotelyTalents Academy turns remote recruitment experience into recruiter-led courses, practical tools, and future coaching for remote job seekers.",
     images: [
       "https://cdn.prod.website-files.com/62a0b732bafc8e2f190f701c/69c3ae5456f9e60e8a2a0ee3_6-candidates.avif",
     ],
@@ -43,7 +43,7 @@ export default function AboutRoute() {
     name: "About RemotelyTalents Academy",
     url: absoluteUrl("/about"),
     description:
-      "RemotelyTalents Academy turns remote recruitment experience into practical education, tools, and future coaching programs for professionals pursuing remote work.",
+      "Learn how RemotelyTalents Academy turns remote recruitment experience into recruiter-led courses, practical tools, and future coaching for remote job seekers.",
     publisher: {
       "@type": "Organization",
       name: "RemotelyTalents Academy",

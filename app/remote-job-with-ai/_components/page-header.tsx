@@ -20,14 +20,7 @@ export function PageHeader() {
           </span>
         </Link>
 
-        <div className="hidden items-center gap-6 sm:flex">
-          <Link
-            href="/about"
-            className="text-sm font-semibold text-[var(--rt-green)]/72 transition-colors hover:text-[var(--rt-green)]"
-          >
-            About us
-          </Link>
-
+        <div className="hidden items-center sm:flex">
           <Link
             href="#offer"
             className="inline-flex items-center justify-center rounded-[6px] bg-[var(--rt-green)] px-5 py-3 text-sm font-bold !text-white transition-transform hover:-translate-y-0.5 hover:bg-[var(--rt-green-2)]"
