@@ -2,6 +2,12 @@ export const homeContent = {
   header: {
     ctaLabel: "View Course",
     ctaHref: "/find-remote-job-with-ai",
+    navLinks: [
+      {
+        href: "/about",
+        label: "About us",
+      },
+    ],
   },
   hero: {
     eyebrow: "RemotelyTalents Academy",
