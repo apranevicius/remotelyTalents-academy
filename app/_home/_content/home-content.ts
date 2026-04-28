@@ -7,6 +7,10 @@ export const homeContent = {
         href: "/about",
         label: "About us",
       },
+      {
+        href: "/coaching-programs",
+        label: "Coaching",
+      },
     ],
   },
   hero: {

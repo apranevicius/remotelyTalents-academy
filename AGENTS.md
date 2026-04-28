@@ -45,6 +45,7 @@ For strategy, copy, offer, and design context, use `../context/` as the source o
 | --- | --- |
 | `/` | Academy home page |
 | `/about` | Academy trust-building About page |
+| `/coaching-programs` | Remote-job coaching waitlist page |
 | `/find-remote-job-with-ai` | Main public course page |
 | `/remote-job-with-ai` | Legacy route that permanently redirects to `/find-remote-job-with-ai` |
 
@@ -56,6 +57,7 @@ For strategy, copy, offer, and design context, use `../context/` as the source o
 | [app/globals.css](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/site/app/globals.css) | Global CSS variables and base styles |
 | [app/_home/](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/site/app/_home) | Academy homepage components and content |
 | [app/about/](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/site/app/about) | About page route, components, content, metadata, and schema |
+| [app/coaching-programs/](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/site/app/coaching-programs) | Remote-job coaching waitlist route, components, content, metadata, schema, and MailerLite email capture |
 | [app/remote-job-with-ai/](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/site/app/remote-job-with-ai) | Shared course page implementation |
 | [app/find-remote-job-with-ai/page.tsx](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/site/app/find-remote-job-with-ai/page.tsx) | Canonical course route, metadata, schema |
 | [DESIGN.md](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/site/DESIGN.md) | Compact AI-facing design contract |
@@ -73,6 +75,7 @@ For strategy, copy, offer, and design context, use `../context/` as the source o
 - Follow [DESIGN.md](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/site/DESIGN.md) before changing UI.
 - Keep the RemotelyTalents green/yellow/cream visual system.
 - Use Poppins only unless a deliberate brand decision changes this.
+- Keep main section headlines and support paragraphs centered by default, including on desktop. Do not introduce left-aligned top-level section intros unless the user explicitly asks for that exception.
 - Do not introduce generic AI gradients, purple palettes, pill CTAs, decorative blobs, or unrelated design systems.
 - Prefer extending existing components and patterns before creating new ones.
 

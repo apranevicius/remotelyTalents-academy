@@ -2,27 +2,38 @@ import type { MetadataRoute } from "next";
 
 import { absoluteUrl } from "./_lib/site-config";
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
+const routeLastModified = {
+  home: new Date("2026-04-28"),
+  course: new Date("2026-04-28"),
+  about: new Date("2026-04-28"),
+  coaching: new Date("2026-04-28"),
+};
 
+export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: absoluteUrl("/"),
-      lastModified: now,
+      lastModified: routeLastModified.home,
       changeFrequency: "weekly",
       priority: 1,
     },
     {
       url: absoluteUrl("/find-remote-job-with-ai"),
-      lastModified: now,
+      lastModified: routeLastModified.course,
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
       url: absoluteUrl("/about"),
-      lastModified: now,
+      lastModified: routeLastModified.about,
       changeFrequency: "monthly",
       priority: 0.7,
+    },
+    {
+      url: absoluteUrl("/coaching-programs"),
+      lastModified: routeLastModified.coaching,
+      changeFrequency: "weekly",
+      priority: 0.8,
     },
   ];
 }

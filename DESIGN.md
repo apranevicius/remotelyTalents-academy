@@ -157,8 +157,9 @@ The layout should be conversion-led and easy to scan.
 - Use max-width containers, usually `max-w-7xl`, `max-w-6xl`, or narrower content wrappers when the section is focused.
 - Use responsive horizontal padding: 24px mobile, 40px tablet, 48px desktop.
 - Use strong vertical rhythm with clear section blocks.
-- Use centered section intros for persuasive, reassuring, or transitional sections.
-- Use left-aligned intros for dense educational, FAQ, module, or asset-heavy sections.
+- Use centered section intros for all main page sections: headline and support paragraph should sit centered above the section body.
+- Avoid left-aligned main section headlines or subheadlines, including on desktop.
+- Dense educational, FAQ, module, or asset-heavy sections may use left-aligned text inside cards, rows, accordions, or content items, but the top-level section intro should remain centered.
 - Use cream as the base page canvas, white for cards, and soft surface only when extra section separation is needed.
 - Repeat CTAs at natural decision points, but keep the page calm and structured.
 
