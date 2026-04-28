@@ -67,7 +67,7 @@ For UI changes, also check the page in a browser on desktop and mobile widths.
 Optional environment variable:
 
 ```bash
-NEXT_PUBLIC_SITE_URL=https://www.remotelytalents.com
+NEXT_PUBLIC_SITE_URL=https://academy.remotelytalents.com
 ```
 
 This value is used for canonical links, sitemap, robots, and structured data through [app/_lib/site-config.ts](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/site/app/_lib/site-config.ts).
@@ -75,7 +75,7 @@ This value is used for canonical links, sitemap, robots, and structured data thr
 If it is not set, the app falls back to:
 
 ```text
-https://www.remotelytalents.com
+https://academy.remotelytalents.com
 ```
 
 Google Tag Manager is embedded in [app/layout.tsx](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/site/app/layout.tsx).

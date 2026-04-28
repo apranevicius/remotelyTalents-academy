@@ -111,7 +111,7 @@ For documentation-only changes:
 ## Environment Notes
 
 - `NEXT_PUBLIC_SITE_URL` can override the public site URL used for canonical links, sitemap, robots, and schema.
-- If it is not set, the app falls back to `https://www.remotelytalents.com`.
+- If it is not set, the app falls back to `https://academy.remotelytalents.com`.
 - Google Tag Manager is currently embedded in [app/layout.tsx](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/site/app/layout.tsx).
 
 ## End-Of-Work Check
