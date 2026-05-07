@@ -21,7 +21,7 @@ export function CoachingHeroSection({
 }: CoachingHeroSectionProps) {
   return (
     <section className="bg-[var(--rt-green)] [background-image:var(--rt-hero-surface)] text-white">
-      <div className="mx-auto grid min-h-[min(760px,calc(84svh-73px))] max-w-7xl items-center gap-12 px-6 py-20 sm:px-10 lg:grid-cols-[1fr_0.78fr] lg:px-12 lg:py-24">
+      <div className="mx-auto grid min-h-[min(760px,calc(84svh-73px))] max-w-7xl items-center gap-12 px-6 py-20 sm:px-10 lg:grid-cols-[1fr_0.92fr] lg:px-12 lg:py-24">
         <div className="max-w-3xl">
           <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[var(--rt-yellow)]">
             {eyebrow}
@@ -55,14 +55,13 @@ export function CoachingHeroSection({
 
         <div className="relative mx-auto w-full max-w-[620px] lg:max-w-none">
           <Image
-            src="/coaching-programs/remote-coaching-video-call.png"
+            src="/coaching-programs/remote-coaching-video-call-anastasia-hero-v6.webp"
             alt={visualAlt}
-            width={1024}
-            height={1024}
+            width={1190}
+            height={990}
             priority
-            unoptimized
             sizes="(min-width: 1024px) 46vw, 92vw"
-            className="h-auto w-full drop-shadow-[0_28px_70px_rgba(0,0,0,0.18)]"
+            className="h-auto w-full"
           />
         </div>
       </div>

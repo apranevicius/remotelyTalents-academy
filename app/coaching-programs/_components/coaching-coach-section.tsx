@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { SectionHeading } from "../../_components/section-heading";
 
 type CoachingCoachSectionProps = {
@@ -18,7 +20,6 @@ export function CoachingCoachSection({
   role,
   bio,
   finalNote,
-  imageLabel,
   proofPoints,
 }: CoachingCoachSectionProps) {
   return (
@@ -33,19 +34,15 @@ export function CoachingCoachSection({
         <div className="mt-12 grid gap-8 rounded-[2.2rem] border border-[var(--rt-line)] bg-white p-6 shadow-[0_18px_44px_rgba(4,61,49,0.05)] sm:p-8 lg:grid-cols-[0.42fr_0.58fr] lg:gap-10 lg:p-10">
           <div>
             <div className="overflow-hidden rounded-[1.9rem] border border-[var(--rt-line)] bg-[linear-gradient(180deg,#eef3e8_0%,#dfe8db_100%)] shadow-[inset_0_1px_0_rgba(255,255,255,0.8)]">
-              <div className="relative flex aspect-[4/5] items-center justify-center p-8 text-center">
-                <div>
-                  <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-[var(--rt-yellow)] text-4xl font-extrabold text-[var(--rt-green)] shadow-[0_14px_34px_rgba(4,61,49,0.12)]">
-                    A
-                  </div>
-                  <p className="mt-6 text-sm font-semibold uppercase tracking-[0.18em] text-[var(--rt-green)]/62">
-                    {imageLabel}
-                  </p>
-                  <p className="mx-auto mt-3 max-w-[14rem] text-sm leading-6 text-[var(--rt-green)]/58">
-                    Replace this placeholder with Anastasia&apos;s final
-                    portrait.
-                  </p>
-                </div>
+              <div className="relative aspect-[4/5]">
+                <Image
+                  src="/coaching-programs/anastasia-coach-portrait.webp"
+                  alt="Anastasia Izotova, remote job career coach"
+                  fill
+                  sizes="(min-width: 1024px) 34vw, (min-width: 640px) 52vw, 88vw"
+                  className="object-cover"
+                  priority={false}
+                />
               </div>
             </div>
           </div>
