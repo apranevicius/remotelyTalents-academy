@@ -39,25 +39,35 @@ Before editing website code, read:
 
 For strategy, copy, offer, and design context, use `../context/` as the source of truth.
 
+For Academy-specific legal terms, refund rules, buyer responsibilities, fulfillment boundaries, and coaching-program no-guarantee language, use the live Google Doc:
+
+- [Academy Terms & Conditions](https://docs.google.com/document/d/1bmLXo9gr05_uuB7bhl4Sci7wyALW3wcw8dbmIPyWgII/edit?usp=sharing)
+
+For Anastasia Izotova bio, coach positioning, expert-section copy, and safe marketing claims, use the live Google Doc:
+
+- [Anastasia Izotova - Coach Positioning One-Pager](https://docs.google.com/document/d/13Fa5nVKeBzysOWcVETqBD4ebvJ0uKiCdj8EFZ7eSp7g/edit?usp=sharing)
+
 ## Route Map
 
 | Route | Purpose |
 | --- | --- |
 | `/` | Academy home page |
 | `/about` | Academy trust-building About page |
-| `/coaching-programs` | Remote-job coaching waitlist page |
+| `/coaching-programs` | Remote-job coaching programs page |
 | `/find-remote-job-with-ai` | Main public course page |
 | `/remote-job-with-ai` | Legacy route that permanently redirects to `/find-remote-job-with-ai` |
+| `/terms-of-service` | Academy-specific public Terms of Service page |
 
 ## Important Files
 
 | File or Folder | Role |
 | --- | --- |
 | [app/_lib/site-config.ts](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/site/app/_lib/site-config.ts) | Site URL, metadata defaults, absolute URL helper |
+| [app/_components/academy-footer.tsx](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/site/app/_components/academy-footer.tsx) | Shared Academy footer and legal-policy links |
 | [app/globals.css](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/site/app/globals.css) | Global CSS variables and base styles |
 | [app/_home/](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/site/app/_home) | Academy homepage components and content |
 | [app/about/](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/site/app/about) | About page route, components, content, metadata, and schema |
-| [app/coaching-programs/](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/site/app/coaching-programs) | Remote-job coaching waitlist route, components, content, metadata, schema, and MailerLite email capture |
+| [app/coaching-programs/](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/site/app/coaching-programs) | Remote-job coaching programs route, components, content, metadata, schema, and conversion CTAs |
 | [app/remote-job-with-ai/](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/site/app/remote-job-with-ai) | Shared course page implementation |
 | [app/find-remote-job-with-ai/page.tsx](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/site/app/find-remote-job-with-ai/page.tsx) | Canonical course route, metadata, schema |
 | [DESIGN.md](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/site/DESIGN.md) | Compact AI-facing design contract |
@@ -69,6 +79,15 @@ For strategy, copy, offer, and design context, use `../context/` as the source o
 - Keep claims aligned with [../context/MEMORY.md](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/context/MEMORY.md).
 - If a claim is unvalidated, either avoid it or clearly mark it as an assumption in context docs.
 - Course copy should stay recruiter-led, practical, calm, and trust-building.
+- For Anastasia copy, frame her as combining recruitment experience with psychology-backed career strategy. Do not describe her as a job-placement recruiter, generic motivational coach, lifestyle guru, or someone who guarantees jobs, interviews, salary increases, recruiter introductions, or employer introductions.
+
+## Legal Link Rules
+
+- Use the Academy Terms & Conditions Google Doc as the drafting source for Academy-specific terms.
+- Public website links should use public policy URLs, not competitor files or private/local references.
+- Privacy and Cookies may link to the shared RemotelyTalents policies if those policies explicitly cover Academy and `academy.remotelytalents.com`.
+- Public Academy Terms URL: `/terms-of-service`.
+- Use [app/_components/academy-footer.tsx](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/site/app/_components/academy-footer.tsx) and checkout/legal links to point to the Academy-specific terms page instead of the general RemotelyTalents Terms of Service.
 
 ## Design Rules
 

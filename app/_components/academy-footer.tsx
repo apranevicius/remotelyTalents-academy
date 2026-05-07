@@ -1,9 +1,28 @@
 import Image from "next/image";
 import Link from "next/link";
 
+const productLinks = [
+  {
+    href: "/coaching-programs",
+    label: "Coaching Programs",
+  },
+  {
+    href: "/find-remote-job-with-ai",
+    label: "Find Remote Job With AI",
+  },
+  {
+    href: "/about",
+    label: "About us",
+  },
+  {
+    href: "https://www.remotelytalents.com",
+    label: "Recruitment Services",
+  },
+] as const;
+
 const legalLinks = [
   {
-    href: "https://www.remotelytalents.com/terms-of-service",
+    href: "/terms-of-service",
     label: "Terms of Service",
   },
   {
@@ -57,13 +76,30 @@ export function AcademyFooter({ description }: AcademyFooterProps) {
             </p>
           ) : null}
 
+          <nav
+            aria-label="Academy products"
+            className="flex flex-wrap items-center justify-center gap-x-5 gap-y-1.5 text-sm font-semibold text-[var(--rt-green)]"
+          >
+            {productLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                target={link.href.startsWith("http") ? "_blank" : undefined}
+                rel={link.href.startsWith("http") ? "noreferrer" : undefined}
+                className="transition-colors hover:text-[var(--rt-green-2)]"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </nav>
+
           <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1.5 text-sm text-[var(--rt-green)]/68">
             {legalLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                target="_blank"
-                rel="noreferrer"
+                target={link.href.startsWith("http") ? "_blank" : undefined}
+                rel={link.href.startsWith("http") ? "noreferrer" : undefined}
                 className="transition-colors hover:text-[var(--rt-green)]"
               >
                 {link.label}

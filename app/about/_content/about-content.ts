@@ -1,15 +1,19 @@
 export const aboutContent = {
   header: {
-    ctaLabel: "View Course",
-    ctaHref: "/find-remote-job-with-ai",
+    ctaLabel: "Find a Remote Job",
+    ctaHref: "/coaching-programs",
     navLinks: [
       {
-        href: "/about",
-        label: "About us",
+        href: "/find-remote-job-with-ai",
+        label: "AI Course",
       },
       {
         href: "/coaching-programs",
         label: "Coaching",
+      },
+      {
+        href: "/about",
+        label: "About us",
       },
     ],
   },

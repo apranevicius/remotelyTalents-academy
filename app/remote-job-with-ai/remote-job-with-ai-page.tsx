@@ -1,3 +1,4 @@
+import { AcademyHeader } from "../_components/academy-header";
 import { AcademyTestimonials } from "./_components/academy-testimonials";
 import { AudienceFitSection } from "./_components/audience-fit-section";
 import { CoursePhasesSection } from "./_components/course-phases-section";
@@ -8,9 +9,27 @@ import { InstructorSection } from "./_components/instructor-section";
 import { LegalFooter } from "./_components/legal-footer";
 import { MidPageCtaSection } from "./_components/mid-page-cta-section";
 import { MobileStickyCta } from "./_components/mobile-sticky-cta";
-import { PageHeader } from "./_components/page-header";
 import { PricingSection } from "./_components/pricing-section";
 import { ToolkitSection } from "./_components/toolkit-section";
+
+const headerConfig = {
+  ctaLabel: "Find a Remote Job",
+  ctaHref: "/coaching-programs",
+  navLinks: [
+    {
+      href: "/find-remote-job-with-ai",
+      label: "AI Course",
+    },
+    {
+      href: "/coaching-programs",
+      label: "Coaching",
+    },
+    {
+      href: "/about",
+      label: "About us",
+    },
+  ],
+} as const;
 
 export function RemoteJobWithAIPageContent() {
   return (
@@ -18,7 +37,7 @@ export function RemoteJobWithAIPageContent() {
       id="top"
       className="bg-[var(--rt-cream)] pb-24 text-[var(--rt-green)] md:pb-0"
     >
-      <PageHeader />
+      <AcademyHeader {...headerConfig} />
       <HeroSection />
       <AudienceFitSection />
       <CoursePhasesSection />

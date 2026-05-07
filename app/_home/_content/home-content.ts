@@ -1,15 +1,19 @@
 export const homeContent = {
   header: {
-    ctaLabel: "View Course",
-    ctaHref: "/find-remote-job-with-ai",
+    ctaLabel: "Find a Remote Job",
+    ctaHref: "/coaching-programs",
     navLinks: [
       {
-        href: "/about",
-        label: "About us",
+        href: "/find-remote-job-with-ai",
+        label: "AI Course",
       },
       {
         href: "/coaching-programs",
         label: "Coaching",
+      },
+      {
+        href: "/about",
+        label: "About us",
       },
     ],
   },
@@ -39,21 +43,33 @@ export const homeContent = {
       "A clearer way to make progress toward a remote job.",
     description:
       "The Academy helps you stop guessing, strengthen how you present yourself, and focus your effort on actions that are more likely to lead to real interview opportunities.",
-    checklist: [
+    paths: [
       {
-        title: "Present yourself more clearly",
+        label: "AI Course",
+        title: "Find a Remote Job With AI",
         description:
-          "Improve how your CV, LinkedIn, and applications communicate your value.",
+          "A self-paced video course and toolkit for people who want a clearer remote job search process they can follow on their own.",
+        bullets: [
+          "29-day remote job search plan",
+          "AI prompts, templates, and practical tools",
+          "Best if you want structure without live coaching",
+        ],
+        ctaLabel: "View AI Course",
+        ctaHref: "/find-remote-job-with-ai",
       },
       {
-        title: "Focus on better opportunities",
+        label: "Coaching Programs",
+        title: "Remote Job Coaching Programs",
         description:
-          "Spend less time on weak roles, fake listings, and low-return search habits.",
-      },
-      {
-        title: "Follow a more credible process",
-        description:
-          "Use recruiter-led guidance to know what to do next and why it matters.",
+          "Live coaching programs for people who want expert feedback on their positioning, applications, interviews, and next steps.",
+        bullets: [
+          "Weekly coaching and expert interaction",
+          "1:1 strategy sessions",
+          "Best if you want direct support while applying",
+        ],
+        ctaLabel: "View Coaching Programs",
+        ctaHref: "/coaching-programs",
+        featured: true,
       },
     ],
   },

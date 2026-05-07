@@ -4,7 +4,7 @@ import Image from "next/image";
 type CoachingHeroSectionProps = {
   eyebrow: string;
   title: string;
-  description: string;
+  bullets: readonly string[];
   primaryCta: {
     label: string;
     href: string;
@@ -15,7 +15,7 @@ type CoachingHeroSectionProps = {
 export function CoachingHeroSection({
   eyebrow,
   title,
-  description,
+  bullets,
   primaryCta,
   visualAlt,
 }: CoachingHeroSectionProps) {
@@ -29,9 +29,19 @@ export function CoachingHeroSection({
           <h1 className="mt-5 max-w-4xl text-4xl font-extrabold tracking-[-0.045em] sm:text-5xl lg:text-[3.75rem] lg:leading-[1.03]">
             {title}
           </h1>
-          <p className="mt-6 max-w-2xl text-base leading-7 text-white/78 sm:text-lg sm:leading-8">
-            {description}
-          </p>
+
+          <div className="mt-7 grid max-w-3xl gap-4">
+            {bullets.map((bullet) => (
+              <div key={bullet} className="flex items-start gap-3">
+                <span className="mt-1.5 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full border border-[color:rgba(240,253,81,0.36)] bg-[color:rgba(240,253,81,0.12)] text-[11px] font-bold text-[var(--rt-yellow)]">
+                  ✓
+                </span>
+                <p className="text-base leading-7 text-white/82 sm:text-lg sm:leading-8">
+                  {bullet}
+                </p>
+              </div>
+            ))}
+          </div>
 
           <div className="mt-8">
             <Link

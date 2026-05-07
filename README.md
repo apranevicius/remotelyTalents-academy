@@ -6,7 +6,7 @@ It contains:
 
 - the Academy homepage at `/`
 - the Academy About page at `/about`
-- the remote-job coaching waitlist page at `/coaching-programs`
+- the remote-job coaching programs page at `/coaching-programs`
 - the public course page at `/find-remote-job-with-ai`
 - a legacy redirect from `/remote-job-with-ai`
 
@@ -88,7 +88,7 @@ Google Tag Manager is embedded in [app/layout.tsx](/Users/adomaspranevicius/Desk
 | [app/page.tsx](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/site/app/page.tsx) | Academy homepage route |
 | [app/_home/](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/site/app/_home) | Homepage components and content |
 | [app/about/](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/site/app/about) | About page route, components, content, metadata, and schema |
-| [app/coaching-programs/](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/site/app/coaching-programs) | Remote-job coaching waitlist route, components, content, metadata, schema, and MailerLite email capture |
+| [app/coaching-programs/](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/site/app/coaching-programs) | Remote-job coaching programs route, components, content, metadata, schema, and conversion CTAs |
 | [app/find-remote-job-with-ai/page.tsx](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/site/app/find-remote-job-with-ai/page.tsx) | Canonical course page route |
 | [app/remote-job-with-ai/page.tsx](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/site/app/remote-job-with-ai/page.tsx) | Legacy redirect route |
 | [app/remote-job-with-ai/remote-job-with-ai-page.tsx](/Users/adomaspranevicius/Desktop/RemotelyTalents/Academy/site/app/remote-job-with-ai/remote-job-with-ai-page.tsx) | Shared course page assembly |
