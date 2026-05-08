@@ -7,6 +7,10 @@ const productLinks = [
     label: "Coaching Programs",
   },
   {
+    href: "/intro-call",
+    label: "Book an Intro Call",
+  },
+  {
     href: "/find-remote-job-with-ai",
     label: "Find Remote Job With AI",
   },
