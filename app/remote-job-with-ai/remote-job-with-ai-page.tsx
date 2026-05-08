@@ -18,11 +18,11 @@ const headerConfig = {
   navLinks: [
     {
       href: "/find-remote-job-with-ai",
-      label: "AI Course",
+      label: "Remote Job Course",
     },
     {
       href: "/coaching-programs",
-      label: "Coaching",
+      label: "Coaching Programs",
     },
     {
       href: "/about",

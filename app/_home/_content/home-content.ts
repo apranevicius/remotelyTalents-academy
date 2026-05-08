@@ -5,11 +5,11 @@ export const homeContent = {
     navLinks: [
       {
         href: "/find-remote-job-with-ai",
-        label: "AI Course",
+        label: "Remote Job Course",
       },
       {
         href: "/coaching-programs",
-        label: "Coaching",
+        label: "Coaching Programs",
       },
       {
         href: "/about",
@@ -45,7 +45,7 @@ export const homeContent = {
       "The Academy helps you stop guessing, strengthen how you present yourself, and focus your effort on actions that are more likely to lead to real interview opportunities.",
     paths: [
       {
-        label: "AI Course",
+        label: "Remote Job Course",
         title: "Find a Remote Job With AI",
         description:
           "A self-paced video course and toolkit for people who want a clearer remote job search process they can follow on their own.",
@@ -54,7 +54,7 @@ export const homeContent = {
           "AI prompts, templates, and practical tools",
           "Best if you want structure without live coaching",
         ],
-        ctaLabel: "View AI Course",
+        ctaLabel: "View Remote Job Course",
         ctaHref: "/find-remote-job-with-ai",
       },
       {

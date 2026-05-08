@@ -12,7 +12,7 @@ const productLinks = [
   },
   {
     href: "/find-remote-job-with-ai",
-    label: "Find Remote Job With AI",
+    label: "Remote Job Course",
   },
   {
     href: "/about",
