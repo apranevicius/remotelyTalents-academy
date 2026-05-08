@@ -9,7 +9,7 @@ const pageDescription =
   "Get structured remote job coaching with expert support on your positioning, CV, LinkedIn, applications, interviews, and remote job search strategy.";
 const pageUrl = absoluteUrl("/coaching-programs");
 const socialImage = absoluteUrl(
-  "/coaching-programs/remote-coaching-video-call-anastasia.webp",
+  "/coaching-programs/remote-coaching-video-call-anastasia-hero-v6.webp",
 );
 const organizationSchema = {
   "@type": "Organization",

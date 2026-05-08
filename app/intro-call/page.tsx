@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     description: pageDescription,
     images: [
       {
-        url: absoluteUrl("/coaching-programs/remote-coaching-video-call-anastasia.webp"),
+        url: absoluteUrl("/coaching-programs/remote-coaching-video-call-anastasia-hero-v6.webp"),
         width: 1024,
         height: 1024,
         alt: "Remote job coaching intro call with Anastasia",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     title: `${pageTitle} | RemotelyTalents Academy`,
     description: pageDescription,
     images: [
-      absoluteUrl("/coaching-programs/remote-coaching-video-call-anastasia.webp"),
+      absoluteUrl("/coaching-programs/remote-coaching-video-call-anastasia-hero-v6.webp"),
     ],
   },
 };
