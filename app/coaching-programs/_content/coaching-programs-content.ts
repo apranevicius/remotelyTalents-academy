@@ -47,7 +47,8 @@ export const coachingProgramsContent = {
     title: "If you feel stuck trying to get a remote job, start here",
     description:
       "Anastasia explains why remote job searches often stall, and how to understand what actually needs to change before you keep applying.",
-    placeholderLabel: "Anastasia video",
+    videoTitle: "Why Your Remote Job Search Is Not Getting Results",
+    videoUrl: "https://www.youtube.com/embed/NK6r6ZtFCFs?si=JLHfrFr7hWN1dZnG&controls=0",
   },
   problem: {
     title: "Why your remote applications get ignored",
