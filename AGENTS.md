@@ -54,6 +54,7 @@ For Anastasia Izotova bio, coach positioning, expert-section copy, and safe mark
 | `/` | Academy home page |
 | `/about` | Academy trust-building About page |
 | `/coaching-programs` | Remote-job coaching programs page |
+| `/intro-call` | Coaching program intro-call request page backed by MailerLite |
 | `/find-remote-job-with-ai` | Main public course page |
 | `/remote-job-with-ai` | Legacy route that permanently redirects to `/find-remote-job-with-ai` |
 | `/terms-of-service` | Academy-specific public Terms of Service page |
@@ -80,6 +81,7 @@ For Anastasia Izotova bio, coach positioning, expert-section copy, and safe mark
 - If a claim is unvalidated, either avoid it or clearly mark it as an assumption in context docs.
 - Course copy should stay recruiter-led, practical, calm, and trust-building.
 - For Anastasia copy, frame her as combining recruitment experience with psychology-backed career strategy. Do not describe her as a job-placement recruiter, generic motivational coach, lifestyle guru, or someone who guarantees jobs, interviews, salary increases, recruiter introductions, or employer introductions.
+- Pricing, checkout, FAQ, and terms copy must describe GoCardless payment plans as available only where supported and as payment plans for the full program fee, not subscriptions, memberships, or pay-as-you-go services.
 
 ## Legal Link Rules
 

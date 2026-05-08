@@ -133,7 +133,7 @@ export default function TermsOfServiceRoute() {
                 <dt className="font-bold uppercase tracking-[0.18em] text-[var(--rt-green)]">
                   Last updated
                 </dt>
-                <dd className="mt-1">May 7, 2026</dd>
+                <dd className="mt-1">May 8, 2026</dd>
               </div>
               <div>
                 <dt className="font-bold uppercase tracking-[0.18em] text-[var(--rt-green)]">
@@ -290,19 +290,45 @@ export default function TermsOfServiceRoute() {
               </p>
               <p>
                 Payment is due at the time of purchase unless a payment plan or
-                other written arrangement is offered and accepted.
+                other written arrangement is offered and accepted. Payment
+                plans, where available, are a payment plan for the full program
+                fee and are not a monthly subscription, membership, or
+                pay-as-you-go service.
               </p>
               <p>
                 Payments may be processed through third-party providers such as
-                Stripe, Teachable, or another payment or learning platform. Your
-                use of those services may also be subject to their own terms and
-                privacy policies.
+                Stripe, GoCardless, Teachable, or another payment or learning
+                platform. GoCardless payment plans may use bank debit, Direct
+                Debit, or similar payment methods depending on the buyer&apos;s
+                country, bank, currency, and available payment scheme.
+                GoCardless payment plans are not available in all countries.
+                Your use of those services may also be subject to their own
+                terms and privacy policies.
               </p>
               <p>
-                You agree to provide accurate billing details and to keep your
-                payment method valid for any agreed payment plan. If a payment
-                fails, we may pause access, withhold services, or cancel
-                participation until the payment issue is resolved.
+                You agree to provide accurate billing details, keep your payment
+                method valid, maintain any required payment mandate or
+                authorization, and make each agreed installment payment on time.
+                If a payment fails, is reversed, is disputed, or cannot be
+                collected, we may pause access, withhold 1:1 sessions, group
+                support, async support, feedback, opportunity curation,
+                materials, or other services until the payment issue is
+                resolved.
+              </p>
+              <p>
+                If you choose a payment plan, you remain responsible for the
+                full agreed program fee unless a refund, cancellation, or legal
+                withdrawal right applies under these Terms or applicable law.
+                Stopping participation, missing calls, changing your mind, or
+                not receiving a job offer does not automatically cancel
+                remaining installment obligations.
+              </p>
+              <p>
+                If you believe a payment was made in error, you should contact
+                us first so we can review it. Unauthorized chargebacks, payment
+                disputes, or mandate cancellations may result in suspended
+                access or termination, and you may remain responsible for
+                legitimate unpaid amounts to the extent permitted by law.
               </p>
             </Section>
 
@@ -447,7 +473,9 @@ export default function TermsOfServiceRoute() {
                 personalized feedback, and limited coach capacity, payments are
                 generally non-refundable once value has started being delivered,
                 except where required by law or where the Academy cannot deliver
-                the purchased service.
+                the purchased service. Payment plans do not change this refund
+                position; installments are used to split the full program fee
+                into payments, not to create a cancellable monthly subscription.
               </p>
               <p>
                 A refund may be available before the program has started, if

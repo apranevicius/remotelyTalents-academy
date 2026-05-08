@@ -7,6 +7,7 @@ const routeLastModified = {
   course: new Date("2026-04-28"),
   about: new Date("2026-04-28"),
   coaching: new Date("2026-04-28"),
+  introCall: new Date("2026-05-08"),
   terms: new Date("2026-05-07"),
 };
 
@@ -35,6 +36,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: routeLastModified.coaching,
       changeFrequency: "weekly",
       priority: 0.8,
+    },
+    {
+      url: absoluteUrl("/intro-call"),
+      lastModified: routeLastModified.introCall,
+      changeFrequency: "monthly",
+      priority: 0.6,
     },
     {
       url: absoluteUrl("/terms-of-service"),

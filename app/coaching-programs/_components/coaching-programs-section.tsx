@@ -13,6 +13,7 @@ type CoachingProgramsSectionProps = {
     label?: string;
     price: string;
     duration: string;
+    paymentOption?: string;
     bestFor: string;
     includes: readonly string[];
     details: readonly string[];
@@ -55,17 +56,24 @@ export function CoachingProgramsSection({
                   ) : null}
                 </div>
 
-                <div className="lg:min-h-[7rem]">
+                <div className="lg:min-h-[9.5rem]">
                   <h3 className="text-2xl font-extrabold tracking-[-0.045em] text-[var(--rt-green)]">
                     {program.name}
                   </h3>
-                  <div className="mt-5 flex items-end gap-3">
-                    <p className="text-4xl font-extrabold tracking-[-0.055em] text-[var(--rt-green)]">
-                      {program.price}
-                    </p>
-                    <p className="pb-1 text-sm font-semibold text-[color:color-mix(in_srgb,var(--rt-green)_58%,white)]">
-                      {program.duration}
-                    </p>
+                  <div className="mt-5">
+                    <div className="flex items-end gap-3">
+                      <p className="text-4xl font-extrabold tracking-[-0.055em] text-[var(--rt-green)]">
+                        {program.price}
+                      </p>
+                      <p className="pb-1 text-sm font-semibold text-[color:color-mix(in_srgb,var(--rt-green)_58%,white)]">
+                        {program.duration}
+                      </p>
+                    </div>
+                    {program.paymentOption ? (
+                      <p className="mt-2 text-sm font-semibold leading-6 text-[color:color-mix(in_srgb,var(--rt-green)_66%,white)]">
+                        {program.paymentOption}
+                      </p>
+                    ) : null}
                   </div>
                 </div>
 

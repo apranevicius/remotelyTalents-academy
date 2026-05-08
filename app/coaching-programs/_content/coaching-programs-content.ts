@@ -115,14 +115,15 @@ export const coachingProgramsContent = {
         ],
         outcome:
           "Clearer direction, stronger understanding of what is blocking the search, and immediate improvements.",
-        ctaLabel: "Enroll Now",
-        ctaHref: "#interest",
+        ctaLabel: "Request Intro Call",
+        ctaHref: "/intro-call",
       },
       {
         name: "Remote Job Accelerator",
         label: "Most Recommended",
         price: "$890",
         duration: "6-8 weeks",
+        paymentOption: "OR 2 installments of $445",
         bestFor:
           "People who want structured execution, expert feedback, and ongoing support while actively applying.",
         includes: [
@@ -144,13 +145,14 @@ export const coachingProgramsContent = {
         ],
         outcome:
           "Clearer job-search system, better application quality, and expert feedback during execution.",
-        ctaLabel: "Book Intro Call",
-        ctaHref: "#interest",
+        ctaLabel: "Request Intro Call",
+        ctaHref: "/intro-call",
       },
       {
         name: "Remote Job Advisory",
         price: "$1,420",
         duration: "8-10 weeks",
+        paymentOption: "OR 3 installments of $475, $475, and $470",
         bestFor:
           "Complex searches, unclear positioning, higher-stakes interviews, or closer individual guidance.",
         includes: [
@@ -175,8 +177,8 @@ export const coachingProgramsContent = {
         ],
         outcome:
           "Complete guided search support with deeper positioning, interview preparation, and personalized opportunity curation.",
-        ctaLabel: "Book Intro Call",
-        ctaHref: "#interest",
+        ctaLabel: "Request Intro Call",
+        ctaHref: "/intro-call",
       },
     ],
   },
@@ -332,9 +334,9 @@ export const coachingProgramsContent = {
           "No. You are responsible for applying, following up, and tracking your search. The program helps you improve the strategy, materials, positioning, and execution behind your applications.",
       },
       {
-        question: "What happens after I buy or book a call?",
+        question: "What happens after I request an intro call?",
         answer:
-          "Remote Job Reset is designed for direct enrollment. Remote Job Accelerator and Remote Job Advisory start with a short intro or fit call so we can understand your situation, confirm whether the program is right for you, and explain the next step. After joining, you complete intake and begin the program process.",
+          "For the MVP launch, all three programs start with a short intro-call request form. After you submit your first name, email, and LinkedIn profile, we will get back to you within 24 hours about the next step. The call helps us understand your situation, confirm whether the program is right for you, and explain how joining works.",
       },
       {
         question: "What happens if I miss a group call?",
@@ -347,9 +349,14 @@ export const coachingProgramsContent = {
           "Yes, with reasonable notice. The recommended minimum is 24 hours. No-shows or late cancellations may count as used sessions unless an exception is agreed.",
       },
       {
+        question: "Are payment plans available?",
+        answer:
+          "Yes. Payment plans are available for Remote Job Accelerator and Remote Job Advisory in supported countries through GoCardless. Remote Job Accelerator can be paid in 2 installments of $445. Remote Job Advisory can be paid in 3 installments: $475, $475, and $470. If GoCardless is not available in your country, we can discuss the available payment options during the intro or fit call. Payment plans are not subscriptions; they split the full program fee into installments.",
+      },
+      {
         question: "What is the refund policy?",
         answer:
-          "Because this is a live coaching and advisory program with limited coach capacity, payments are generally non-refundable once the program has started, once digital materials have been accessed, or once any 1:1 session, group call, review, async support, or personalized work has been delivered. Final refund terms should follow the Academy Terms and any legal requirements.",
+          "Because this is a live coaching and advisory program with limited coach capacity, payments are generally non-refundable once the program has started, once digital materials have been accessed, or once any 1:1 session, group call, review, async support, or personalized work has been delivered. Payment plans do not change this refund position. Final refund terms should follow the Academy Terms and any legal requirements.",
       },
     ],
   },
