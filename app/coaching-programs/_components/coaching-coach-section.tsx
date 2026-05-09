@@ -36,7 +36,7 @@ export function CoachingCoachSection({
             <div className="overflow-hidden rounded-[1.9rem] border border-[var(--rt-line)] bg-[linear-gradient(180deg,#eef3e8_0%,#dfe8db_100%)] shadow-[inset_0_1px_0_rgba(255,255,255,0.8)]">
               <div className="relative aspect-[4/5]">
                 <Image
-                  src="/coaching-programs/anastasia-coach-portrait.webp"
+                  src="/coaching-programs/anastasia-portrait.avif"
                   alt="Anastasia Izotova, remote job career coach"
                   fill
                   sizes="(min-width: 1024px) 34vw, (min-width: 640px) 52vw, 88vw"
