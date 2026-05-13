@@ -1,5 +1,6 @@
-import Link from "next/link";
 import Image from "next/image";
+
+import { ScrollLink } from "../../_components/scroll-link";
 
 type CoachingHeroSectionProps = {
   eyebrow: string;
@@ -44,12 +45,12 @@ export function CoachingHeroSection({
           </div>
 
           <div className="mt-8">
-            <Link
+            <ScrollLink
               href={primaryCta.href}
               className="inline-flex min-h-12 items-center justify-center rounded-[7px] bg-[var(--rt-yellow)] px-7 py-3.5 text-sm font-bold !text-[var(--rt-green)] transition-transform hover:-translate-y-0.5"
             >
               {primaryCta.label}
-            </Link>
+            </ScrollLink>
           </div>
         </div>
 

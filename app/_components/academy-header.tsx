@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 type AcademyHeaderProps = {
@@ -19,14 +20,30 @@ export function AcademyHeader({
   navLinks = [],
 }: AcademyHeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
   const hasMobileMenu = navLinks.length > 0 || Boolean(ctaHref && ctaLabel);
 
   function closeMenu() {
     setIsMenuOpen(false);
   }
 
+  function handleCtaClick(event: React.MouseEvent<HTMLAnchorElement>) {
+    closeMenu();
+
+    if (!ctaHref || ctaHref.startsWith("#")) {
+      return;
+    }
+
+    const targetUrl = new URL(ctaHref, window.location.origin);
+
+    if (targetUrl.pathname === pathname && !targetUrl.hash) {
+      event.preventDefault();
+      window.location.assign(targetUrl.toString());
+    }
+  }
+
   return (
-    <header className="sticky top-0 z-20 border-b border-[var(--rt-line)] bg-[color:rgba(247,247,241,0.92)] backdrop-blur">
+    <header className="z-20 border-b border-[var(--rt-line)] bg-[color:rgba(247,247,241,0.92)] backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 sm:px-10 lg:px-12">
         <Link
           href="/"
@@ -100,6 +117,7 @@ export function AcademyHeader({
           {ctaHref && ctaLabel ? (
             <Link
               href={ctaHref}
+              onClick={handleCtaClick}
               className="inline-flex items-center justify-center rounded-[6px] bg-[var(--rt-green)] px-5 py-3 text-sm font-bold !text-white transition-transform hover:-translate-y-0.5 hover:bg-[var(--rt-green-2)]"
             >
               {ctaLabel}
@@ -133,7 +151,7 @@ export function AcademyHeader({
           {ctaHref && ctaLabel ? (
             <Link
               href={ctaHref}
-              onClick={closeMenu}
+              onClick={handleCtaClick}
               className="mt-3 inline-flex min-h-12 w-full items-center justify-center rounded-[6px] bg-[var(--rt-green)] px-5 py-3 text-sm font-bold !text-white transition-transform hover:-translate-y-0.5 hover:bg-[var(--rt-green-2)]"
             >
               {ctaLabel}

@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { ScrollLink } from "../../_components/scroll-link";
 
 type CoachingFinalCtaSectionProps = {
   title: string;
@@ -27,12 +27,12 @@ export function CoachingFinalCtaSection({
         </p>
 
         <div className="mt-9">
-          <Link
+          <ScrollLink
             href={ctaHref}
             className="inline-flex items-center justify-center rounded-[7px] border border-[color:rgba(4,61,49,0.14)] bg-[var(--rt-yellow)] px-8 py-4 text-sm font-bold !text-[var(--rt-green)] transition-transform hover:-translate-y-0.5"
           >
             {ctaLabel}
-          </Link>
+          </ScrollLink>
         </div>
       </div>
     </section>
